@@ -7,45 +7,29 @@ public class stringprogram {
 	public void usergiven() {
 		
 	}
-	
-	
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		
 		String [] happyIndex= {"cool", "perfect", "awesome", "fantastic"};
 		String [] sadIndex= {"okay","sorry","repeat","again"};
 		
-		Scanner scan=new Scanner(System.in);
-		System.out.println("Enter your string:");
-		String[] given=scan.next().split(" ");;
+		String scan="sorry perfect perfect sorry sorry perfect perfect";
+		String[] given=scan.split(" ");;
 		
 		int hi=0;
 		for(int i=0;i<happyIndex.length;i++) {
 			
-			for(int j=0;j>=0;j++) {
-				if(happyIndex[i]==given[j]) {	
+			for(int j=0;j<given.length;j++) {
+				if(happyIndex[i].equals(given[j])) {	
 					hi++;
 					
-				}
-				
-			}
-			
-		}
+				}}}
 	int si=0;	 
 for(int k=0;k<sadIndex.length;k++) {
 			
-			for(int j=0;j>=0;si++) {
-				if(happyIndex[k]==given[j]) {
+			for(int j=0;j<given.length;j++) {
+				if(sadIndex[k].equals(given[j])) {
 					si++;
-				}
-				
-			}
-			
-		}
-		
-		
+				}}}
 		if(hi>si) {
 			System.out.println("Happy Index");
 		}else if(hi<si){
@@ -53,10 +37,6 @@ for(int k=0;k<sadIndex.length;k++) {
 		}else {
 			System.out.println("Nutral");
 		}
-		
-		
-		
-		
 		
 	}
 
