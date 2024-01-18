@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testng.practiceclass">
+      <class name="Handson_Package.WebTables">
         <methods>
-          <include name="getstart"/>
+          <include name="browserstart"/>
         </methods>
-      </class> <!-- Testng.practiceclass -->
+      </class> <!-- Handson_Package.WebTables -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

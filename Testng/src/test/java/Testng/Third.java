@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
 public class Third {
-@Test
+@Test(groups= {"sanity"})
 	public void run() {
 		System.out.println("Third");
 		WebDriver driver=new FirefoxDriver();
